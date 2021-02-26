@@ -22,6 +22,6 @@ public class GreetingController {
   // @GetMapping("/greeting/{name}")
   // public Greeting greeting(@PathVariable Map<String,String> pathVarsMap){
   //   return greeting(pathVarsMap.get("name"));
-  }
+  // }
 
 }
