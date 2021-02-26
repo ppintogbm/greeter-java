@@ -1,12 +1,13 @@
 package com.gbm.samples.greeterjava;
 
-// import java.util.Map;
-import java.util.concurrent.atomic.AtomicLong;
 
+import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+// import java.util.Map;
+// import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
 public class GreetingController {
@@ -18,9 +19,9 @@ public class GreetingController {
     return new Greeting(requestCounter.incrementAndGet(), String.format(template, name));
   }
 
-  @GetMapping("/greeting/{name}")
-  public Greeting greeting(@PathVariable Map<String,String> pathVarsMap){
-    return greeting(pathVarsMap.get("name"));
-  }
+  // @GetMapping("/greeting/{name}")
+  // public Greeting greeting(@PathVariable Map<String,String> pathVarsMap){
+  //   return greeting(pathVarsMap.get("name"));
+  // }
 
 }
